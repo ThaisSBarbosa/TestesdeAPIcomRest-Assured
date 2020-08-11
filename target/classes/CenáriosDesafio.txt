@@ -1,0 +1,63 @@
+Não deve acessar API sem token
+	Get /contas
+	Esperado erro 401
+	
+Deve incluir conta com sucesso
+	Post /signin   fazer login email senha e pegar token
+	post /contas   nome da conta
+	
+Deve alterar conta com sucesso
+	put /contas/:id    vai precisar do token do caso anterior   enviar novo nome
+	
+Não deve incluir conta com nome repetido
+	post /contas   nome igual da outra
+	
+Deve inserir movimentação com sucesso
+	post /transaçoes
+	enviar:
+	conta_id
+	usuario_id
+	descricao
+	envolvido
+	tipo(desp/rec)
+	data_transacao (dd/MM/yyyy)
+	data_pagamento (dd/MM/yyyy)
+	valor (0.00f)
+	status (true ou false)   foi realizada ou nao
+	
+Deve validar campos obrigatorios na movimentação
+	post /transaçoes   posso causar erro nao enviando campos para saber como ele valida
+	
+Não deve cadastrar movimentação futura
+	post /transaçoes       data_transacao nao pode ser futura
+	
+Nao deve remover conta com movimentação
+	Delete /contas/:id
+	
+Deve calcular saldo das contas
+	Get /saldo
+	
+Deve remover uma movimentaçao
+	delete /transacoes/:id
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
