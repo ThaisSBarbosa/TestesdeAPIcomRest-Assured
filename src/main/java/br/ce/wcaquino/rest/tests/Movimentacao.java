@@ -1,4 +1,4 @@
-package br.ce.waquino.rest.tests;
+package br.ce.wcaquino.rest.tests;
 
 public class Movimentacao {
 	
